@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro de Asistencia del personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/805-original.webp" alt="logo" width="50dp">
+            <div class="logo">UTHH</div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="#directorio.html">Directorio</a>
+                <a href="#academicos.html">Contacto</a>
+                <a href="#servicios">Servicios</a>
+               
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        <form action="agregar.php" method="POST" enctype="multipart/form-data">
+    <label>Descripción de la imagen:</label>
+    <input type="text" name="descripcion" required>
+    <br><br>
+    <label>Selecciona una imagen:</label>
+    <input type="file" name="imagen" accept="image/*" required>
+    <br><br>
+    <input type="submit" value="Subir Imagen" name="submit">
+</form>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Email: contacto@uthh.edu.mx</p>
+                <p>Tel: (771) 123 4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Ubicación</h4>
+                <p>Carretera Chalahuiyapa-Huejutla, Hidalgo</p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <p>
+                    <a href="#"><img src="img/face.png" width="30px" alt="Facebook"></a>
+                    <a href="#"><img src="img/insta.png" width="30px" alt="Instagram"></a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Universidad Tecnológica | Todos los derechos reservados
+        </div>
+    </footer>
+</body>
+</html>
